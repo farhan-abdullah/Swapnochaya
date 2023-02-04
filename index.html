@@ -12,31 +12,34 @@
 		<link rel="stylesheet" href="styles/styles.css" />
 		<script src="https://kit.fontawesome.com/ef7c530b20.js" crossorigin="anonymous"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
 
 		<!-- <link rel="icon" href="logo.jpg" type="image/x-icon" /> -->
 
 		<title>Swapnochaya</title>
 	</head>
 	<body>
-		<nav>
+		<nav class="sticky flex flex-col justify-between items-center px-10 md:flex-row bg-[#C2BEC2]">
 			<div><h1>Swapnochaya</h1></div>
 
 			<div>
-				<ul>
+				<ul class="flex items-center">
 					<li class="item">
-						<a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+						<a class="active" aria-current="page" href="/index.html">Home</a>
 					</li>
 					<li class="item">
-						<a class="nav-link" href="./Projects.html">Projects</a>
+						<a class="" href="./Projects.html">Projects</a>
 					</li>
 					<li class="item">
-						<a class="nav-link" href="./Volunteers.html">Volunteers</a>
+						<a class="" href="./Volunteers.html">Volunteers</a>
 					</li>
 					<li class="item">
-						<a class="nav-link" href="./Contact.html">Contact Us</a>
+						<a class="" href="./Contact.html">Contact Us</a>
 					</li>
 					<li class="item">
-						<a class="nav-link" href="./Donate.html">Donate</a>
+						<button class="text-white font-bold rounded-md">
+							<label for="my-modal-5" class="bg-[#B6354A] btn py-3 px-5 border-none">Donate</label>
+						</button>
 					</li>
 				</ul>
 			</div>
@@ -49,13 +52,13 @@
 			</section>
 		</main>
 
-		<footer class="mx-auto text-center">
+		<footer class="mx-auto text-center bg-[#544953]">
 			<section class="grid grid-cols-1 gap-0 md:grid-cols-2 mb-20 items-center justify-around">
 				<div>
 					<img class="mx-auto w-20 h-20" src="./images/logo.jpg" alt="" />
 				</div>
 				<div>
-					<h4>Connect with us</h4>
+					<h4 class="text-black">Connect with us</h4>
 
 					<a href="https://www.facebook.com/SwapnoChayaOfficial" target="_blank" rel="noopener noreferrer">
 						<i class="fa-brands fa-square-facebook fa-2x"></i>
@@ -65,8 +68,19 @@
 					</a>
 				</div>
 			</section>
-			<p class="text-[#4F4F4F]">Author: Swapnochaya</p>
-			<a class="text-[#4F4F4F]" href="mailto:swapnochayaofficial@gmail.com">swapnochayaofficial@gmail.com</a>
+			<p class="text-black">Author: Swapnochaya</p>
+			<a class="text-black" href="mailto:swapnochayaofficial@gmail.com">swapnochayaofficial@gmail.com</a>
 		</footer>
+		<input type="checkbox" id="my-modal-5" class="modal-toggle" />
+		<div class="modal">
+			<div class="modal-box w-11/12 max-w-5xl">
+				<!-- <h3 class="font-bold text-lg"> </h3> -->
+				<p class="p-2 font-medium text-lg">Bkash: 01920803102</p>
+				<p class="p-2 font-medium text-lg">Nagad: 01711487068</p>
+				<div class="modal-action">
+					<label for="my-modal-5" class="btn">Done</label>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
