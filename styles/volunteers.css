@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
 .custom-container {
 	justify-content: center;
 }
 
 .custom-1 {
 	border: 2px solid gray;
+}
+i {
+	color: black;
 }
